@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="View/css/style.css">
+        <link rel="shortcut icon" href="View/img/Resto-Gourmand-favicon.jpg">
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -23,12 +24,12 @@
     </head>
     <body>
         <?php include ('View/menu.php');?>
-        <div class="container">
+        <div>
             <?php echo $contenu; ?>
             <footer>
-                <div class="flexbox">
+                <div class="flexbox container">
                     <div class="col-lg-4">
-                        <!-- image ici --> <p>In mauris justo, euismod ut malesuadur adipiscing elit ur adipiscing elit. Ris justo, euismod ut malesuadu.</p>
+                        <img src="View/img/Resto-Gourmand-logo.png" alt="logo_restaurant" title="Restaurant Le Gourmand" /><p>In mauris justo, euismod ut malesuadur adipiscing elit ur adipiscing elit. Ris justo, euismod ut malesuadu.</p>
                     </div>
                     <div class="col-lg-3">
                         <p>Place Saint Roch</p>

@@ -14,7 +14,7 @@
     <div class="bandeau_rouge col-lg-12">
         <div class="entete">
             <div class="entetepart col-lg-4">
-                <div class="logo_restaurant"><img src="img/Resto-Gourmand-logo.png" alt="logo_restaurant" title="Restaurant Le Gourmand" /></div>
+                <div class="logo_restaurant"><img src="View/img/Resto-Gourmand-logo.png" alt="logo_restaurant" title="Restaurant Le Gourmand" /></div>
             </div>
             <div class="entetepart col-lg-8">
                 <nav class="menu" role="navigation">

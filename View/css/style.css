@@ -1,0 +1,653 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=3.0.1');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+    url('../fonts/fontawesome-webfont.woff?v=3.0.1') format('woff'),
+    url('../fonts/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/*logos font awesome*/
+.logo_tel:before {
+    font-family: FontAwesome;
+    content:"\f095";
+    color: #ffffff;
+    font-size: 16px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 24px; /* Approximation causée par une substitution de police */
+    text-align: left;
+    padding-right: 14px;
+}
+.logo_rs {
+    cursor: pointer;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 18px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 24px; /* Approximation causée par une substitution de police */
+    text-align: left;
+    padding-left: 14px;
+}
+.logo_rs:hover { 
+    color: #cc0000;
+}
+.logo_fb:before {
+    font-family: FontAwesome;
+    content:"\f09a";
+
+}
+.logo_twitter:before {
+    font-family: FontAwesome;
+    content:"\f099";
+}
+.logo_ap:before {
+    font-family: FontAwesome;
+    content:"\f16d";
+}
+.logo_fleche:before {
+    font-family: FontAwesome;
+    content:"\f0dd";
+}
+.logo_loupe:before {
+    font-family: FontAwesome;
+    content:"\f00e";
+    color: #cc0000;
+    font-size: 40px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 42px; /* Approximation causée par une substitution de police */
+    text-align: center;
+}
+/* logos paragraphe*/
+.logo_fa {
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: #cc0000;
+    border-style: solid;
+    width: 88px;
+    height: 88px;
+    margin:auto;
+}
+.logo_fa p {
+    padding-top: 20px;
+}
+.logo1:before {
+    font-family: FontAwesome;
+    content:"\f2dc";
+    color: #cc0000;
+    font-size: 40px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 42px; /* Approximation causée par une substitution de police */
+    text-align: center;
+}
+.logo2:before {
+    font-family: FontAwesome;
+    content:"\f0f5";
+    color: #cc0000;
+    font-size: 40px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 42px; /* Approximation causée par une substitution de police */
+    text-align: center;
+}
+.logo3:before {
+    font-family: FontAwesome;
+    content:"\f004";
+    color: #cc0000;
+    font-size: 40px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 42px; /* Approximation causée par une substitution de police */
+    text-align: center;
+}
+/*Suites logos - Font awesome*/
+.logo_download:before {
+    padding-right: 4px;
+    font-family: FontAwesome;
+    font-size: 22px;
+    content:"\f019";
+    color:#FFF;
+}
+/*classe flexbox*/
+.flexbox {
+    display:flex;
+}
+
+/*liens*/
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+/*Image apres h2*/
+h2:after{
+    content:url(../img/Resto-Gourmand-deco.png);
+    display:block;
+}
+
+/*Header*/
+header {
+    width:100%;
+}
+
+/*Bandeau gris*/
+.bandeau_gris {
+    background-color: #5b6570;
+    height: 48px;
+}
+.bandeau_gris .entete {
+    width:1170px;
+    height: 48px;
+    margin:0 auto;
+    display:flex;
+}
+.bandeau_gris .entete .entetepart {
+    vertical-align: middle;
+    width:50%;
+    padding: 12px;
+}
+.entete div+div {
+    text-align: right;
+}
+.logo_tel {
+    font-family: Muli;
+    color: #ffffff;
+    font-size: 15px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 24px; /* Approximation causée par une substitution de police */
+    text-align: left;
+}
+#recherche {
+    border-radius: 8px;
+    background-color: #cccccc;
+    width: 190px;
+    height: 26px;
+    /*texte interieur*/
+    font-family: Muli;
+    color: #575757;
+    font-size: 14px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 24px; /* Approximation causée par une substitution de police */
+    text-align: left;
+    /*padding*/
+    padding-left:12px;
+    border:none;
+}
+
+
+/*Bandeau rouge*/
+.bandeau_rouge {
+    background-color: #cc0000;
+    height: 90px;
+}
+.bandeau_rouge .entete {
+    width:1170px;
+    height: 90px;
+    margin:0 auto;
+    display:flex;
+}
+.bandeau_rouge .entete .entetepart {
+    vertical-align: middle;
+    height: 90px;
+}
+.logo_restaurant {
+    padding-top: 24px;
+}
+.menu {
+    padding-top: 44px;
+    font-family: Muli;
+    color: #ffffff;
+    font-size: 14px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 24px; /* Approximation causée par une substitution de police */
+    text-align: right;
+    text-transform: uppercase;
+}
+.menu ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+.menu li .sousmenu {
+    display:none;
+    position:absolute;
+    z-index: 1;
+    padding:0px;
+    /*style asset*/
+    background-color: #FFF;
+    box-shadow: 3px 5px 6px 0px rgba(6, 7, 7, 0.45);
+    width: 150px;
+    height: 160px;
+    /*style pour li*/
+    font-family: HelveticaNeue;
+    color: #5b6570;
+    font-size: 14px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 40px; /* Approximation causée par une substitution de police */
+    text-align: left;
+    background-color: #ffffff;
+    box-shadow: 3px 5px 6px 0px rgba(6, 7, 7, 0.45);
+    width: 150px;
+    height: 160px;
+}
+.menu li:hover .sousmenu {
+    display:block
+}
+.sousmenu li {
+    padding-left: 6px;
+    text-transform: none;
+    display:block;
+    cursor:pointer;
+    width: 150px;
+    height: 41px;
+}
+.sousmenu li:hover {
+    background-color: #cc0000;
+    color: white;
+}
+.logo_fleche {
+    display: inline-block;
+    vertical-align: middle;
+    padding:0px 0px 8px 14px;
+}
+
+/*image*/
+.img_accueil {
+    display:flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 550px;
+    background: url(../img/food-salad-restaurant-person.jpg);
+    background-size:auto;
+    background-position : center center;
+}
+.img_accueil div {
+   /* padding:150px 0px 50px 0px;*/
+}
+.title1 {
+    font-family: Muli;
+    color: #ffffff;
+    font-size: 30px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 60px; /* Approximation causée par une substitution de police */
+    text-align: center;
+}
+.title2 {
+    font-family: 'Dancing Script', cursive;
+    color: #ffffff;
+    font-size: 72px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 60px; /* Approximation causée par une substitution de police */
+    text-align: center;
+}
+.title3 {
+    font-family: Muli;
+    color: #ffffff;
+    font-size: 36px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 60px; /* Approximation causée par une substitution de police */
+    text-align: center;
+}
+.btn_reserve {
+    cursor:pointer;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #C00;
+    width: 171px;
+    height: 50px;
+    /*texte*/
+    font-family: Muli;
+    color: #ffffff;
+    font-size: 18px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 50px; /* Approximation causée par une substitution de police */
+    text-align: center;
+}
+.btn_reserve:hover{
+    background-color: #600;
+}
+.btn_reserve span {
+    padding: 6px 0px;
+}
+
+/*paragraphe1*/
+.paraph1 {
+    width:1170px;
+    margin:59px auto;
+    text-align: center;
+    display:flex;
+}
+.paraph1 div div+div h3{
+    font-family: Muli;
+    color: #5b6570;
+    font-size: 20px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 42px; /* Approximation causée par une substitution de police */
+    text-align: center;
+}
+.paraph1 div div+div p {
+    font-family: Muli;
+    color: #5b6570;
+    font-size: 14px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 30px; /* Approximation causée par une substitution de police */
+    text-align: center;
+}
+
+
+/*Paragraphe 2*/
+.paraph2 {
+    width: 1170px;
+    margin:53px auto;
+    text-align: center;
+}
+.titrep2 {
+    height: 95px;
+    margin: 76px auto;
+    /*texte*/
+    font-family: 'Dancing Script', cursive;
+    color: #cc0000;
+    text-align: center;
+}
+.titrep2 h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.presentation p:first-child {
+    font-family: Muli;
+    color: #5b6570;
+    font-size: 20px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 42px; /* Approximation causée par une substitution de police */
+    text-align: left;
+}
+.presentation p+p {
+    font-family: Muli;
+    color: #5b6570;
+    font-size: 14px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 30px; /* Approximation causée par une substitution de police */
+    text-align: justify;
+}
+.knowmore {
+    cursor:pointer;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: 2px solid #C00;
+    width: 169px;
+    height: 48px;
+    /*texte*/
+    text-align: center;
+}
+.knowmore h3 {
+    font-family: Muli;
+    color: #C00;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0px;
+}
+.knowmore:hover h3 {
+    background-color: #C00;
+    color:#FFF;
+}
+.knowmore:hover a {
+    color:#FFF;
+    text-decoration: none;
+}
+/*Paragraphe 2 - images*/
+.img_extract:hover img {
+   -webkit-filter: brightness(20%);
+    -moz-filter: brightness(20%);
+     -ms-filter: brightness(20%);
+      -o-filter: brightness(20%);
+         filter: brightness(20%);
+}
+.img_extract {
+    position:relative;
+}
+.logo_loupe {
+    visibility: hidden;
+    position:absolute;
+    top:118px;
+    left:124px;
+}
+.img_extract:hover .logo_loupe {
+    visibility: visible;
+}
+
+/*Carte des plats*/
+.carte_plats_conteneur
+{
+    width:100%;
+    background-image: url(../img/motif.png);
+}
+.carte_plats {
+    width:1170px;
+    margin:0 auto;
+    padding-top: 58px;
+    text-align: center;
+}
+.titrep3 {
+    font-family: 'Dancing Script', cursive;
+    color: #cc0000;
+    text-align: center;
+}
+.titrep3 h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.bordertab {
+    border-bottom: 2px solid #E6E6E6; 
+    width: 1138px;
+    height: 1px;
+}
+th {
+    font-family: Muli;
+    color: #5b6570;
+    font-size: 20px; /* Approximation causée par une substitution de police */
+    font-weight: 600;
+    line-height: 42px; /* Approximation causée par une substitution de police */
+    text-align: left;
+}
+tr td:first-child p:first-child{
+    font-family: Muli;
+    color: #5b6570;
+    font-size: 16px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 30px; /* Approximation causée par une substitution de police */
+    text-align: left;
+}
+tr td:first-child p+p {
+    font-family: Muli;
+    color: #5b6570;
+    font-size: 14px; /* Approximation causée par une substitution de police */
+    font-style: italic;
+    line-height: 30px; /* Approximation causée par une substitution de police */
+    text-align: left;
+}
+.choice_assiette {
+    font-family: Muli;
+    color: #5b6570;
+    font-size: 14px; /* Approximation causée par une substitution de police */
+    font-weight: 600;
+    line-height: 18px; /* Approximation causée par une substitution de police */
+    text-align: center;
+}
+.bg_gris {
+    background-color: rgba(40, 40, 40, 0.3);
+    /*Texte*/
+    font-family: Muli;
+    color: #ffffff;
+    font-size: 16px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 30px; /* Approximation causée par une substitution de police */
+    text-align: right;
+}
+tbody tr+tr td:last-child {
+    font-family: Muli;
+    color: #333333;
+    font-size: 16px; /* Approximation causée par une substitution de police */
+    font-weight: 600;
+    line-height: 30px; /* Approximation causée par une substitution de police */
+    text-align: right;
+}
+.liens_after_carte {
+    display: flex;
+    justify-content: flex-end;
+    padding: 45px 0px 65px 0px;
+}
+.liens_after_carte a:first-child {
+    display:inline-block;
+    background-color: #5b6570;
+    width: 239px;
+    height: 50px;
+    /*Texte*/
+    font-family: Muli;
+    color: #ffffff;
+    font-size: 18px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 50px; /* Approximation causée par une substitution de police */
+    text-align: center;
+    /*Ajout*/
+    border-radius: 12px;
+    margin-right: 18px;
+}
+.liens_after_carte a {
+    text-decoration: none;
+}
+.liens_after_carte a:first-child:hover {
+    background-color: #22262a;
+}
+.liens_after_carte a+a {
+    display:inline-block;
+    border-width: 2px;
+    border-color: #cc0000;
+    border-style: solid;
+    background-color: #ffffff;
+    width: 231px;
+    height: 50px;
+    /*Texte*/
+    font-family: Muli;
+    color: #cc0000;
+    font-size: 18px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 50px; /* Approximation causée par une substitution de police */
+    text-align: center;
+    /*Ajout*/
+    border-radius: 12px;
+}
+.liens_after_carte a+a:hover {
+    background-color: #C00;
+    color:#FFF;
+}
+
+
+/*Dernier paragraphe formulaire et plan*/
+.formandplan {
+    width: 1170px;
+    margin:53px auto;
+    text-align: center;
+}
+.formulaire label {
+    display:block;
+    font-family: Muli;
+    color: #5b6570;
+    font-size: 20px; /* Approximation causée par une substitution de police */
+    font-weight: 600;
+    line-height: 42px; /* Approximation causée par une substitution de police */
+    text-align: left;
+}
+.formulaire input[type=text], .formulaire input[type=tel]
+{
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #d0d8dd;
+    border-style: solid;
+    width: 100%;
+    height: 38px;
+    margin-bottom: 31px;
+}
+.formulaire textarea {
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #d0d8dd;
+    border-style: solid;
+    width: 100%;
+    height: 137px;
+    max-height:250px;
+    resize:vertical;
+}
+.formulaire input[type=submit] {
+    cursor:pointer;
+    border-radius: 10px;
+    background-color: #C00;
+    width: 171px;
+    height: 50px;
+    /*Texte*/
+    font-family: Muli;
+    color: #FFF;
+    font-size: 18px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 40px; /* Approximation causée par une substitution de police */
+    text-align: center;
+    border:none;
+    /*marges*/
+    margin-top:35px;
+}
+.formulaire input[type=submit]:hover {
+    background-color: #600;
+}
+/*Label message qui devient invisible*/
+.formulaire label:nth-child(7) {
+    visibility: hidden;
+}
+
+/*Iframe - plan de google maps*/
+div.i4ewOd-pzNkMb-haAclf {
+    display:none!important;
+}
+iframe body {
+    display:none;
+}
+
+/*Footer*/
+footer {
+    width:100%;
+    background-color: #5b6570;
+    height: 247px;
+    /*Texte*/
+    font-family: Muli;
+    color: #ffffff;
+    font-size: 14px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 30px; /* Approximation causée par une substitution de police */
+    text-align: left;
+}
+footer > div {
+    width:1170px;
+    margin:0 auto;
+    padding-top:34px;
+}
+footer div:first-child div+div p{
+    padding:3px 0px;
+}
+footer div:first-child div:first-child p {
+    font-family: Muli;
+    color: #ffffff;
+    font-size: 14px; /* Approximation causée par une substitution de police */
+    font-style: italic;
+    line-height: 24px; /* Approximation causée par une substitution de police */
+    text-align: left;
+}
+footer div:first-child a:hover{
+    color:#C00;
+}
+footer > div+div {
+    font-family: Muli;
+    color: #ffffff;
+    font-size: 12px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 24px; /* Approximation causée par une substitution de police */
+    text-align: center;
+    padding-bottom:56px;
+}
