@@ -65,38 +65,21 @@ $titre = 'Restaurant Le Gourmand';
                     <td class="col-lg-1 choice_assiette">Grande assiette</td>
                     <td class="col-lg-1 choice_assiette">Petite assiette</td>
                 </tr>
-                <tr class="bordertab">
-                    <td class="col-lg-10">
-                        <p>Lorem ipsum dolor sit amet</p>
-                        <p>Consectetur adipiscing elit. In mauris justo, euismod ut malesuada</p>
-                    </td>
-                    <td class="bg_gris col-lg-1">18.00€</td>
-                    <td class="col-lg-1">11.00€</td>
-                </tr>
-                <tr class="bordertab">
-                    <td class="col-lg-10">
-                        <p>Lorem ipsum dolor sit amet</p>
-                        <p>Consectetur adipiscing elit. In mauris justo, euismod ut malesuada</p>
-                    </td>
-                    <td class="bg_gris col-lg-1">18.00€</td>
-                    <td class="col-lg-1">11.00€</td>
-                </tr>
-                <tr class="bordertab">
-                    <td class="col-lg-10">
-                        <p>Lorem ipsum dolor sit amet</p>
-                        <p>Consectetur adipiscing elit. In mauris justo, euismod ut malesuada</p>
-                    </td>
-                    <td class="bg_gris col-lg-1">18.00€</td>
-                    <td class="col-lg-1">11.00€</td>
-                </tr>
-                <tr class="bordertab">
-                    <td class="col-lg-10">
-                        <p>Lorem ipsum dolor sit amet</p>
-                        <p>Consectetur adipiscing elit. In mauris justo, euismod ut malesuada</p>
-                    </td>
-                    <td class="bg_gris col-lg-1">18.00€</td>
-                    <td class="col-lg-1">11.00€</td>
-                </tr>
+                <?php
+                foreach ($products as $product)
+                {
+                    ?>
+                    <tr class="bordertab">
+                        <td class="col-lg-10">
+                            <p><?php echo $product->getNom(); ?></p>
+                            <p><?php echo $product->getDescription(); ?></p>
+                        </td>
+                        <td class="bg_gris col-lg-1"><?php echo $product->getPrixMax(); ?>€</td>
+                        <td class="col-lg-1"><?php echo $product->getPrixMin(); ?>€</td>
+                    </tr>
+                    <?php
+                }
+                ?>
                 </tbody>
             </table>
             <div class="liens_after_carte">
