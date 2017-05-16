@@ -22,10 +22,10 @@
                         <li class="col-lg-5"><a href="#">le restaurant</a>
                         </li><li class="col-lg-2"><a>Cartes<span class="logo_fleche"></span></a>
                             <ul class="sousmenu">
-                                <li>Entrées</li>
-                                <li>Plats</li>
-                                <li>Desserts</li>
-                                <li>Boissons</li>
+                                <li><a href="index.php?action=menu&&id=1">Entrées</a></li>
+                                <li><a href="index.php?action=menu&&id=2">Plats</a></li>
+                                <li><a href="index.php?action=menu&&id=3">Desserts</a></li>
+                                <li><a href="index.php?action=menu&&id=4">Boissons</a></li>
                             </ul>
                         </li><li class="col-lg-3"><a href="#noussituer">nous trouver</a>
                         </li><li class="col-lg-2"><a href="#noussituer">CONTACT</a></li>
