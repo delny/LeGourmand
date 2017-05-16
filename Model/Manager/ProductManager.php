@@ -22,6 +22,27 @@ class ProductManager extends DatabaseManager
     }
 
     /**
+     * @param ProductType $productType
+     * @return array
+     */
+    public function findByType(ProductType $productType)
+    {
+        $sql = $this->bdd->prepare('SELECT * FROM product WHERE prdct_type_id = :id');
+        $sql->bindValue(':id',$productType->getId());
+        $sql->execute();
+        $results = $sql->fetchAll();
+
+        //conversion en tableau d'objets
+        $products = [];
+        foreach ($results as $result)
+        {
+            $productId = $result['prdct_id'];
+            $products[$productId] = $this->buildObject($result);
+        }
+        return $products;
+    }
+
+    /**
      * @return array
      */
     public function findAll()
