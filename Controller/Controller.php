@@ -1,9 +1,13 @@
 <?php
 class Controller 
 {
-    protected function render(Array $donnes_vue)
+    /**
+     * @param $viewName
+     * @param $params
+     */
+    protected function renderView($viewName,$params)
     {
-        extract($donnes_vue);
-        require('View/gabarit.php');
+        $view = new View();
+        $view->createView($viewName,$params);
     }
 }

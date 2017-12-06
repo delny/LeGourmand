@@ -1,11 +1,8 @@
 <?php
-//ouverture de session
+/*Start session*/
 session_start();
 
-//autoloader
-require('Model/Autoloader.php');
-Autoloader::register();
-
-//routeur
-$router = new Router();
-$router->routerRequete();
+/*Run Application*/
+require('App/Application.php');
+$myApp = new Application();
+$myApp->run();

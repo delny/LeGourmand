@@ -8,10 +8,9 @@ class MenuController extends Controller
         $products = $this->getProductManager()->findByType($productType);
 
         //retourne vue
-        require('View/vueMenu.php');
-        $this->render([
-            'titre' => $titre,
-            'contenu' => $contenu,
+        $this->renderView('menu',[
+            'products' => $products,
+            'productType' => $productType,
         ]);
     }
 

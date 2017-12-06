@@ -10,10 +10,8 @@ class HomeController extends Controller
         $products = $productManager->findAll();
 
         //retourne vue
-        require('View/vueAccueil.php');
-        $this->render([
-                'titre' => $titre,
-                'contenu' => $contenu,
-            ]);
+        $this->renderView('accueil',[
+            'products' => $products,
+        ]);
     }
 }
