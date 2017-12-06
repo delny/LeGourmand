@@ -2,13 +2,13 @@
 
 class ErrorController extends Controller
 {
+    /**
+     * @param $error
+     */
     public function error($error)
     {
-        //on definit la vue et on retourne le resulat
-        require('View/vueErreur.php');
-        $this->render([
-                'titre' => $titre,
-                'contenu' => $contenu,
-            ]);
+        $this->renderView('erreur',[
+           'error' => $error,
+        ]);
     }
 }
